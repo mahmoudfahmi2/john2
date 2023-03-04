@@ -2,6 +2,7 @@ from pyvirtualdisplay import Display
 display = Display(visible=0, size=(2000, 2000))
 display.start()
 import undetected_chromedriver as uc
+import time
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC

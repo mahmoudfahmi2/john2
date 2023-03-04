@@ -24,7 +24,7 @@ jobs:
       - name: Install chrome
         run: wget https://github.com/RobRich999/Chromium_Clang/releases/download/v108.0.5335.0-r1053948-linux64-deb-avx2/chromium-browser-unstable_108.0.5335.0-1_amd64.deb
       - name: Install chrome2  
-        run: dpkg -i chromium-browser-unstable_108.0.5335.0-1_amd64.deb
+        run: sudo dpkg -i chromium-browser-unstable_108.0.5335.0-1_amd64.deb
       - name: wget pack
         run: wget https://github.com/dessant/buster/releases/download/v2.0.1/buster_captcha_solver_for_humans-2.0.1-chrome.zip
       - name: wget pack2

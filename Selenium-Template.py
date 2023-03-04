@@ -14,7 +14,7 @@ from selenium.webdriver.chrome.options import Options
 options = uc.ChromeOptions()
 options.add_argument('--disable-gpu')
 options.add_argument('--load-extension=./buster')
-driver = uc.Chrome(version_main = 108 ,options=options)
+driver = uc.Chrome(version_main = 110 ,options=options)
 driver.set_window_size(2000, 2000)
 wait = WebDriverWait(driver, 30)
 driver.get("https://cuty.io/fetchrewards")

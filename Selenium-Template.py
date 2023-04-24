@@ -15,6 +15,11 @@ from selenium.webdriver.chrome.options import Options
 options = uc.ChromeOptions()
 options.add_argument('--disable-gpu')
 options.add_argument('--load-extension=./buster')
+def random_with_N_digits(n):
+    range_start = 10**(n-1)
+    range_end = (10**n)-1
+    return randint(range_start, range_end)
+
 driver = uc.Chrome(version_main = 112 ,options=options)
 driver.set_window_size(2000, 2000)
 wait = WebDriverWait(driver, 30)

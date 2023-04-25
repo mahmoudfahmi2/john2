@@ -33,4 +33,4 @@ wait.until(EC.element_to_be_clickable((By.XPATH, '/html/body/div[10]/div/div/div
 wait.until(EC.element_to_be_clickable((By.XPATH, '/html/body/div[10]/div/div/div/form/div[3]/input'))).send_keys("zxcasdqwe12")
 wait.until(EC.element_to_be_clickable((By.XPATH, '/html/body/div[10]/div/div/div/form/div[4]/input'))).send_keys("zxcasdqwe12")
 wait.until(EC.element_to_be_clickable((By.XPATH, '/html/body/div[10]/div/div/div/form/div[5]/button'))).click()
-
+time.sleep(10)
